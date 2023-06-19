@@ -13,8 +13,8 @@ public class Aluno extends Usuario {
     public Aluno() {
     }
 
-    public Aluno(String nome, String endereco, int rgm, String curso) {
-        super(nome, endereco);
+    public Aluno(String nome, String endereco, String username, String password, int rgm, String curso) {
+        super(nome, endereco, username, password);
         this.rgm = rgm;
         this.curso = curso;
     }

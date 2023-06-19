@@ -27,24 +27,71 @@ public class Biblioteca {
         /*********** SALVAR OBJETOS NO BANCO DE DADOS ******************/
 
         // Instanciar usuários
-        Usuario u1 = new Usuario("joao", "rua 1");
-        Usuario u2 = new Usuario("maria", "rua 2");
-        Usuario u3 = new Usuario("jose", "rua 3");
+        Usuario u1 = new Usuario(   "Elvertoni", 
+                                    "rua 1", 
+                                    "elvertoni", 
+                                    "123456");
 
+        Usuario u2 = new Usuario(   "João",
+                                    "rua 2",
+                                    "joao",
+                                    "789456");
+
+        Usuario u3 = new Usuario(   "Maria",
+                                    "rua 3",
+                                    "maria",
+                                    "963258");
+
+        
         // Instanciar alunos
-        Aluno a1 = new Aluno("Luis", "rua 1", 123456, "ADS");
-        Aluno a2 = new Aluno("Ana", "rua 2", 123457, "ADS");
-        Aluno a3 = new Aluno("Pedro", "rua 3", 123458, "ADS");
+        Aluno a1 = new Aluno(   "Aluno 1",
+                                "rua 4",
+                                "aluno1",
+                                "741258",
+                                111111,
+                                "Enfermagem");
+
+        Aluno a2 = new Aluno(   "Aluno 2",  
+                                "rua 5",
+                                "aluno2",
+                                "852147",
+                                222222,
+                                "Pedagogia");
+
+        Aluno a3 = new Aluno(   "Aluno 3",  
+                                "rua 6",
+                                "aluno3",
+                                "963258",
+                                333333,
+                                "Medicina");
+
 
         // Instanciar editoras
-        Editora e1 = new Editora("Editora 1", "038987/0001-00");
-        Editora e2 = new Editora("Editora 2", "038987/0001-00");
-        Editora e3 = new Editora("Editora 3", "038987/0001-00");
+        Editora e1 = new Editora(   "Editora 1",
+                                    "000.111");
+
+        Editora e2 = new Editora(   "Editora 2",
+                                    "000.222");
+
+        Editora e3 = new Editora(   "Editora 3",
+                                    "000.333");
+
+        
 
         // Instanciar livros
-        Livro l1 = new Livro("Livro 1", "Autor 1", "000.987", 2021, 1);
-        Livro l2 = new Livro("Livro 2", "Autor 2", "000.988", 2022, 3);
-        Livro l3 = new Livro("Livro 3", "Autor 3", "000.999", 2023, 2);
+        Livro l1 = new Livro(   "Livro 1",
+                                "000.111",
+                                2021,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1);
+
 
 
         // Salva os objetos no banco

@@ -3,14 +3,17 @@ package com.elvertoni.modelos;
 import javax.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "tipo_Editora")
+@Table(name = "editora")
 public class Editora {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
+
+    @Column(name = "nome")
     protected static String nome;
+
+    @Column(name = "cnpj")
     protected static String cnpj;
 
     public Editora() {
