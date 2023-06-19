@@ -11,17 +11,27 @@ public class Editora {
     protected Long id;
 
     @Column(name = "nome")
-    protected static String nome;
+    protected String nome;
 
     @Column(name = "cnpj")
-    protected static String cnpj;
+    protected String cnpj;
 
+    //metodo construtor vazio
     public Editora() {
     }
 
+    //metodo construtor com parametros
     public Editora(String nome, String cnpj) {
-        Editora.nome = nome;
-        Editora.cnpj = cnpj;
+        this.nome = nome;
+        this.cnpj = cnpj;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -29,7 +39,7 @@ public class Editora {
     }
 
     public void setNome(String nome) {
-        Editora.nome = nome;
+        this.nome = nome;
     }
 
     public String getCnpj() {
@@ -37,12 +47,10 @@ public class Editora {
     }
 
     public void setCnpj(String cnpj) {
-        Editora.cnpj = cnpj;
+        this.cnpj = cnpj;
     }
 
-    @Override
-    public String toString() {
-        return "Editora [nome=" + nome + ", cnpj=" + cnpj + "]";
-    }
+    //getters e setters
+    
 
 }

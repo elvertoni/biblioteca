@@ -79,18 +79,10 @@ public class Biblioteca {
         
 
         // Instanciar livros
-        Livro l1 = new Livro(   "Livro 1",
-                                "000.111",
-                                2021,
-                                1,
-                                1,
-                                1,
-                                1,
-                                1,
-                                1,
-                                1,
-                                1,
-                                1);
+        
+
+
+
 
 
 

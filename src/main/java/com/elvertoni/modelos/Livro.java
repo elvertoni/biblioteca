@@ -3,20 +3,31 @@ package com.elvertoni.modelos;
 import javax.persistence.*;
 
 @Entity
-@DiscriminatorValue(value = "livro")
+@Table(name = "livro")
 
 public class Livro extends Editora {
 
+    @Column(name = "titulo")
     private String titulo;
+
+    @Column(name = "autor")
     private String autor;
+
+    @Column(name = "cdd")
     private String cdd;
+
+    @Column(name = "ano")
     private int ano;
+
+    @Column(name = "edicao")
     private int edicao;
 
+    // Construtor vazio
     public Livro() {
     }
 
-    public Livro(String titulo, String autor, String cdd, int ano, int edicao) {
+    // Construtor com parâmetros
+    public Livro(String nome, String cnpj, String titulo, String autor, String cdd, int ano, int edicao) {
         super(nome, cnpj);
         this.titulo = titulo;
         this.autor = autor;
@@ -65,10 +76,8 @@ public class Livro extends Editora {
         this.edicao = edicao;
     }
 
-    @Override
-    public String toString() {
-        return "Livro [titulo = " + titulo + ", autor = " + autor + ", cdd = " + cdd + ", ano = " + ano + ", edicao = " + edicao + "]";
-    }
+
+    // Getters e Setters
+   
+
 }
-
-
