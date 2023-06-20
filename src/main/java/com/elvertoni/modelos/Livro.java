@@ -22,6 +22,9 @@ public class Livro extends Editora {
     @Column(name = "edicao")
     private int edicao;
 
+    @ManyToOne
+    private Emprestimo emprestimo;
+
     // Construtor vazio
     public Livro() {
     }
